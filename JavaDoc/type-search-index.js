@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"pl.put.poznan.transformer.logic","l":"TextTransformer"},{"p":"pl.put.poznan.transformer.app","l":"TextTransformerApplication"},{"p":"pl.put.poznan.transformer.rest","l":"TextTransformerController"}]
