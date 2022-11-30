@@ -63,7 +63,7 @@
                     <show>private</show>
                     <nohelp>true</nohelp>
                     <reportOutputDirectory>${project.basedir}</reportOutputDirectory>
-                    <destDir>JavaDoc</destDir>
+                    <destDir>docs</destDir>
                 </configuration>
                 <executions>
                     <execution>
