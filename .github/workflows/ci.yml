@@ -16,5 +16,5 @@ jobs:
           cache: maven
       - name: Validate, build and run tests
         run:
-          mvn site --batch-mode --update-snapshots verify
+          mvn --batch-mode --update-snapshots verify
 
