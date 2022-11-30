@@ -81,7 +81,7 @@
                 </executions>
                 <configuration>
                     <javadocExecutable>
-                        ${java.home}/bin/JavaDoc
+                        <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
                     </javadocExecutable>
                 </configuration>
             </plugin>
