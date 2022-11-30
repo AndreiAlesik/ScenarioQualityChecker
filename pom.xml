@@ -13,7 +13,11 @@
     <version>2.0</version>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${project.build.sourceEncoding
+        </project.reporting.outputEncoding>
         <java.version>11</java.version>
+        <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
     </properties>
 
 
