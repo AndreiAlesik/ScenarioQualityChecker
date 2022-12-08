@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af652fbf-dc5a-41d5-9236-ecef3f5abd98" name="Changes" comment="Documentation" />
+    <list default="true" id="af652fbf-dc5a-41d5-9236-ecef3f5abd98" name="Changes" comment="Documentation">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/app/TextTransformerApplication.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/app/class-use/TextTransformerApplication.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/app/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/app/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/app/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/logic/TextTransformer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/logic/class-use/TextTransformer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/logic/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/logic/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/logic/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/rest/TextTransformerController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/rest/class-use/TextTransformerController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/rest/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/rest/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pl/put/poznan/transformer/rest/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +100,8 @@
       <workItem from="1670528688598" duration="241000" />
       <workItem from="1670528961405" duration="2972000" />
       <workItem from="1670536838699" duration="475000" />
-      <workItem from="1670537384565" duration="372000" />
+      <workItem from="1670537384565" duration="721000" />
+      <workItem from="1670538122723" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="JavaDoc">
       <created>1669800085638</created>
@@ -248,7 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670531428831</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Documentation">
+      <created>1670537824218</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1670537824218</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Documentation">
+      <created>1670538012451</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670538012451</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +299,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
