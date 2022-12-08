@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="af652fbf-dc5a-41d5-9236-ecef3f5abd98" name="Changes" comment="Documentation" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenRunner">
+    <option name="environmentProperties">
+      <map>
+        <entry key="JAVA_HOME" value="/home/user/.sdkman/candidates/java/11.0.12-open/" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IGDjeefa5g2yX9wlw7XnevzU4j" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;42c2ee494644253e42e3895cda77782d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="TextTransformerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ioprojectarchitecture" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.put.poznan.transformer.app.TextTransformerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af652fbf-dc5a-41d5-9236-ecef3f5abd98" name="Changes" comment="" />
+      <created>1669799163012</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669799163012</updated>
+      <workItem from="1669799164435" duration="87000" />
+      <workItem from="1669799270057" duration="12909000" />
+      <workItem from="1669909263346" duration="612000" />
+      <workItem from="1669919422252" duration="1378000" />
+      <workItem from="1669921608791" duration="157000" />
+      <workItem from="1670162614076" duration="2224000" />
+      <workItem from="1670523508861" duration="3011000" />
+      <workItem from="1670528688598" duration="241000" />
+      <workItem from="1670528961405" duration="2972000" />
+      <workItem from="1670536838699" duration="475000" />
+      <workItem from="1670537384565" duration="372000" />
+    </task>
+    <task id="LOCAL-00001" summary="JavaDoc">
+      <created>1669800085638</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669800085638</updated>
+    </task>
+    <task id="LOCAL-00002" summary="JavaDoc">
+      <created>1669801552851</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669801552851</updated>
+    </task>
+    <task id="LOCAL-00003" summary="JavaDoc">
+      <created>1669801849395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669801849395</updated>
+    </task>
+    <task id="LOCAL-00004" summary="JavaDoc2">
+      <created>1669801998986</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669801998986</updated>
+    </task>
+    <task id="LOCAL-00005" summary="JavaDoc">
+      <created>1669802242728</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669802242728</updated>
+    </task>
+    <task id="LOCAL-00006" summary="JavaDoc">
+      <created>1669815055842</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669815055842</updated>
+    </task>
+    <task id="LOCAL-00007" summary="JavaDoc">
+      <created>1669816131815</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669816131815</updated>
+    </task>
+    <task id="LOCAL-00008" summary="JavaDoc">
+      <created>1669816672779</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669816672779</updated>
+    </task>
+    <task id="LOCAL-00009" summary="JavaDoc">
+      <created>1669817035137</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669817035137</updated>
+    </task>
+    <task id="LOCAL-00010" summary="JavaDoc">
+      <created>1669817165389</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669817165389</updated>
+    </task>
+    <task id="LOCAL-00011" summary="JavaDoc">
+      <created>1669817455416</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669817455416</updated>
+    </task>
+    <task id="LOCAL-00012" summary="JavaDoc">
+      <created>1669818069211</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669818069211</updated>
+    </task>
+    <task id="LOCAL-00013" summary="JavaDoc">
+      <created>1669819233745</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669819233745</updated>
+    </task>
+    <task id="LOCAL-00014" summary="JavaDoc">
+      <created>1669819439779</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669819439779</updated>
+    </task>
+    <task id="LOCAL-00015" summary="JavaDoc">
+      <created>1669819609612</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669819609612</updated>
+    </task>
+    <task id="LOCAL-00016" summary="JavaDoc">
+      <created>1669819902615</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669819902615</updated>
+    </task>
+    <task id="LOCAL-00017" summary="JavaDoc">
+      <created>1669820410756</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669820410756</updated>
+    </task>
+    <task id="LOCAL-00018" summary="JavaDoc">
+      <created>1669821617277</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669821617277</updated>
+    </task>
+    <task id="LOCAL-00019" summary="JavaDoc">
+      <created>1669823766912</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669823766912</updated>
+    </task>
+    <task id="LOCAL-00020" summary="JavaDoc">
+      <created>1669823808504</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669823808504</updated>
+    </task>
+    <task id="LOCAL-00021" summary="JavaDoc">
+      <created>1669823839790</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1669823839790</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Documentation">
+      <created>1670528636732</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1670528636732</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Documentation">
+      <created>1670531274330</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1670531274330</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Documentation">
+      <created>1670531428831</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1670531428831</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="JavaDoc2" />
+    <MESSAGE value="JavaDoc" />
+    <MESSAGE value="Documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation" />
+  </component>
+</project>
