@@ -27,7 +27,7 @@ public class KeywordsController {
         {
             Scenario s=new Scenario(text);
             s.Keywords();
-            File myFile = new File("./files/json/Keywords.json");
+            File myFile = new File("./files/output/Keywords.json");
             Scanner myReader = new Scanner(myFile);
             out=myReader.nextLine();
         }

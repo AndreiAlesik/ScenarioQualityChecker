@@ -28,7 +28,7 @@ public class Scenariolvlshow {
         {
             Scenario s=new Scenario(text);
             s.Scenariolvlshow(num);
-            File myFile = new File("./files/json/Scenariolvlshow.json");
+            File myFile = new File("./files/output/Scenariolvlshow.json");
             Scanner myReader = new Scanner(myFile);
             out=myReader.nextLine();
         }

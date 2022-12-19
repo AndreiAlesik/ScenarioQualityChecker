@@ -1,8 +1,7 @@
 package pl.put.poznan.transformer.base;
 
 import com.google.gson.Gson;
-import pl.put.poznan.transformer.logic.Visitor;
-import pl.put.poznan.transformer.logic.myInt;
+import pl.put.poznan.transformer.logic.VisitorPattern.Visitable;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -138,7 +137,7 @@ public class SubScenario {
     }
 
 
-    public void accept(Visitor v){
+    public void accept(Visitable v){
         v.visit(this);
         for (Object s : this.content){
             if(s.getClass()==Step.class) ((Step) s).accept(v);

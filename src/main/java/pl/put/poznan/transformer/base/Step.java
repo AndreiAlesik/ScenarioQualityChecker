@@ -1,6 +1,6 @@
 package pl.put.poznan.transformer.base;
 
-import pl.put.poznan.transformer.logic.Visitor;
+import pl.put.poznan.transformer.logic.VisitorPattern.Visitable;
 
 public class Step {
 
@@ -13,7 +13,7 @@ public class Step {
         level = a;
     }
 
-    public void accept(Visitor v){
+    public void accept(Visitable v){
 
         v.visit(this);
 

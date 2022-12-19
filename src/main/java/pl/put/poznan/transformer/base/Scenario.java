@@ -1,7 +1,12 @@
 package pl.put.poznan.transformer.base;
 
 import com.google.gson.Gson;
-import pl.put.poznan.transformer.logic.*;
+import pl.put.poznan.transformer.logic.VisitorPattern.CheckVisitorsSteps;
+import pl.put.poznan.transformer.logic.VisitorPattern.CountVisitorsSteps;
+import pl.put.poznan.transformer.logic.VisitorPattern.KeyWordVisitor;
+import pl.put.poznan.transformer.logic.VisitorPattern.ShowVisitorScenario;
+import pl.put.poznan.transformer.logic.filereading.ReadFile;
+import pl.put.poznan.transformer.logic.filereading.ReadJSON;
 
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -18,7 +23,7 @@ public class Scenario {
     public myInt numInt;
     public ArrayList<String> list;
 
-    public JsonReader json_scenario;
+    public ReadJSON json_scenario;
     public Scenario(String file){
         title = "";
         actors = new ArrayList<>();
@@ -26,15 +31,15 @@ public class Scenario {
         mySubScenario = new SubScenario();
         startInt = new myInt(0);
         numInt = new myInt(3);
-        json_scenario = new JsonReader();
+        json_scenario = new ReadJSON();
 
         json_scenario.main(file);
 
-        this.title = json_scenario.return_title();
-        this.actors = json_scenario.return_actors();
+        this.title = json_scenario.returnTitle();
+        this.actors = json_scenario.getActors();
         this.systemActor = json_scenario.systemActor;
 
-        list = FileReader.read("ReadJson.txt");
+        list = ReadFile.read("ReadJson.txt");
     }
 
     public Scenario(Scenario tmp){
@@ -53,7 +58,7 @@ public class Scenario {
         tmp.mySubScenario=new SubScenario();
         tmp.startInt.reset();
         tmp.mySubScenario.addContent(startInt, list, 0);
-        tmp.mySubScenario.accept(new ShowScenarioVisitor());
+        tmp.mySubScenario.accept(new ShowVisitorScenario());
         this.mySubScenario=tmp.mySubScenario;
         this.Save2JSON(tmp,"./json/Scenarioshow.json");
     }
@@ -65,7 +70,7 @@ public class Scenario {
         tmp.mySubScenario=new SubScenario();
         tmp.startInt.reset();
         tmp.mySubScenario.numerized(numInt, list, 0, 0, "");
-        tmp.mySubScenario.accept(new ShowScenarioVisitor());
+        tmp.mySubScenario.accept(new ShowVisitorScenario());
 
         tmp.Savetofile(pw);
         this.Save2JSON(tmp,"./json/Scenarionumershow.json");
@@ -77,7 +82,7 @@ public class Scenario {
         tmp.mySubScenario=new SubScenario();
         tmp.startInt.reset();
         tmp.mySubScenario.lvlshow(startInt, list, 0,stop);
-        tmp.mySubScenario.accept(new ShowScenarioVisitor());
+        tmp.mySubScenario.accept(new ShowVisitorScenario());
         this.Save2JSON(tmp,"./json/Scenariolvlshow.json");
     }
 
@@ -86,7 +91,7 @@ public class Scenario {
         this.mySubScenario=new SubScenario();
         this.mySubScenario.addContent(startInt, list, 0);
 
-        StepCountVisitor v = new StepCountVisitor();
+        CountVisitorsSteps v = new CountVisitorsSteps();
         this.mySubScenario.accept(v);
         int value = v.getStepCount();
 
@@ -104,7 +109,7 @@ public class Scenario {
 
         //this.mySubScenario.key_word_counter(this.mySubScenario);
         //this.mySubScenario.get_key_words_count();
-        KeyWordsVisitor v = new KeyWordsVisitor();
+        KeyWordVisitor v = new KeyWordVisitor();
         this.mySubScenario.accept(v);
         int value = v.getKeyWords();
         this.mySubScenario.Save2JSONint(value,"./json/Keywords.json");
@@ -118,7 +123,7 @@ public class Scenario {
         //this.mySubScenario.step_check(this.mySubScenario, actors, systemActor);
         //this.mySubScenario.get_invalid_steps();
 
-        StepCheckVisitor v = new StepCheckVisitor(this.actors, this.systemActor);
+        CheckVisitorsSteps v = new CheckVisitorsSteps(this.actors, this.systemActor);
         this.mySubScenario.accept(v);
 
         ArrayList<Step> steps = v.getInvalidSteps();
