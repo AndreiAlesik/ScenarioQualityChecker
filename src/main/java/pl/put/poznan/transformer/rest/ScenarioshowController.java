@@ -28,7 +28,7 @@ public class ScenarioshowController {
         {
             Scenario s=new Scenario(text);
             s.Scenarioshow();
-            File myFile = new File("./files/json/Scenarioshow.json");
+            File myFile = new File("./files/output/Scenarioshow.json");
             Scanner myReader = new Scanner(myFile);
             out=myReader.nextLine();
         }

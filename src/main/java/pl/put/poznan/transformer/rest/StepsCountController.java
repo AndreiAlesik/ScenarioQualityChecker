@@ -27,7 +27,7 @@ public class StepsCountController {
         {
             Scenario s=new Scenario(text);
             s.Stepscount();
-            File myFile = new File("./files/json/steps_count.json");
+            File myFile = new File("./files/output/steps_count.json");
             Scanner myReader = new Scanner(myFile);
             out=myReader.nextLine();
         }

@@ -28,7 +28,7 @@ public class StepscheckController {
         {
             Scenario s=new Scenario(text);
             s.Stepscheck();
-            File myFile = new File("./files/json/Stepscheck.json");
+            File myFile = new File("./files/output/Stepscheck.json");
             Scanner myReader = new Scanner(myFile);
             out=myReader.nextLine();
         }
