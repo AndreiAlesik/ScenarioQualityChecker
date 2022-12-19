@@ -31,6 +31,7 @@ public class ScenarioshowController {
             File myFile = new File("./files/output/Scenarioshow.json");
             Scanner myReader = new Scanner(myFile);
             out=myReader.nextLine();
+            myReader.close();
         }
         else {
             out="Error";

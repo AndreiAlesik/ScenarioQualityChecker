@@ -1,0 +1,60 @@
+[{
+  "title": "Wyplata z bankomatu",
+  "actors": [
+    "Użytkownik"
+  ],
+  "systemActor": "System",
+  "steps": [
+    {
+      "content": "Użytkownik wkłada kartę do bankomatu.",
+      "subSteps": []
+    },
+    {
+      "content": "IF: System pyta o PIN.",
+      "subSteps": []
+    },
+    {
+      "content": "IF: niepoprawny PIN.",
+      "subSteps": [
+        {
+          "content": "System prosi o ponowne podanie PIN.",
+          "subSteps": []
+        },
+        {
+          "content": "Użytkownik podaje PIN.",
+          "subSteps": []
+        }
+
+      ]
+    },
+    {
+      "content": "System potwierdza wpisany PIN.",
+      "subSteps": []
+    },
+    {
+      "content": "Użytkownik podaje kwotę którą chce wypłacic.",
+      "subSteps": []
+    },
+    {
+      "content": "IF: Kwota jest większa niż Saldo.",
+      "subSteps": [
+        {
+          "content": "System informuje użytkownika o niepoprawnej kwocie.",
+          "subSteps": []
+        },
+        {
+          "content": "Użytkownik podaje nową kwotę.",
+          "subSteps": []
+        }
+      ]
+    },
+    {
+      "content": "System oddaje kartę.",
+      "subSteps": []
+    },
+    {
+      "content": "System wyplaca pieniądze.",
+      "subSteps": []
+    }
+  ]
+}]

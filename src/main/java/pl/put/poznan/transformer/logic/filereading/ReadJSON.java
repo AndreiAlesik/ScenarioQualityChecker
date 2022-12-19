@@ -1,99 +1,118 @@
 package pl.put.poznan.transformer.logic.filereading;
+import java.io.*;
+import java.io.FileReader;
+import java.util.ArrayList;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import java.io.*;
-import java.util.ArrayList;
-
-public class ReadJSON {
+public  class ReadJSON {
     public static String title_2;
     public static ArrayList<String> actors_2;
     public static String systemActor;
     public static ArrayList<Object> mySubScenario;
-
-    public static void main(String filename) {
+    @SuppressWarnings("unchecked")
+    public  static void main(String file)
+    {
+        //JSON parser object to parse read file
         JSONParser jsonParser = new JSONParser();
-        try (FileReader readFile = new FileReader("/files/input/" + filename)) {
-            try {
-                Object object = jsonParser.parse(readFile);
-                JSONArray employeeList = (JSONArray) object;
+
+        try (FileReader reader = new FileReader("./files/input/"+file))
+        {
+            //Read JSON file
+            try{
+                Object obj = jsonParser.parse(reader);
+                JSONArray employeeList = (JSONArray) obj;
+                //System.out.println(employeeList);
                 JSONObject startObject = (JSONObject) employeeList.get(0);
                 title_2 = title(startObject);
                 actors_2 = actors(startObject);
                 systemActor = systemActors(startObject);
                 mySubScenario = step(startObject);
-                info_txt();
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
+                into_txt();
+            } catch (Exception ignored) {
+                System.out.println(ignored.getMessage());
             }
-        } catch (IOException io) {
-            System.out.println(io.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
-
-    private static String title(JSONObject scenarioObject) {
-        String title = (String) scenarioObject.get("title");
-        return title;
+    private static String title(JSONObject scenario){
+        //Get employee object within list
+        String title = (String) scenario.get("title");
+        return  title;
     }
 
-    private static ArrayList<String> actors(JSONObject scenarioObject) {
-        ArrayList<String> actorList = new ArrayList<>();
-        JSONArray actors = (JSONArray) scenarioObject.get("actors");
-        if (actors.size() > 0) {
-            for (int i = 0; i < actors.size(); i++) {
-                actorList.add(String.valueOf(actorList.get(i)));
-            }
-        } else System.out.println("Actors empty");
-        return actorList;
+    private static ArrayList<String> actors(JSONObject scenario){
+        //Get employee object within list
+        ArrayList<String> actor_list = new ArrayList<>();
+        JSONArray actors = (JSONArray) scenario.get("actors");
+        if(actors.size() > 0 ){
+            for( int i=0; i< actors.size(); i++) {
+                actor_list.add(String.valueOf(actors.get(i)));
+            }}else{
+            System.out.println("Actors : []" );
+
+        }
+        return actor_list;
+    }
+    private static String systemActors(JSONObject scenario){
+        //Get employee object within list
+        String systemActor1 = (String) scenario.get("systemActor");
+        return systemActor1;
     }
 
-    private static String systemActors(JSONObject scenarioObject) {
-        return (String) scenarioObject.get("systemActor");
-    }
+    private static ArrayList<Object> step(JSONObject scenario)
+    {
+        JSONArray Steps = (JSONArray) scenario.get("steps");
 
-    private static ArrayList<Object> step(JSONObject scenarioObject) {
-        JSONArray steps = (JSONArray) scenarioObject.get("steps");
-        ArrayList<Object> tempList = new ArrayList<>();
-        if (steps.size() > 0) {
-            for (int i = 0; i < steps.size(); i++) {
-                JSONObject newStep = (JSONObject) steps.get(i);
-                ArrayList<Object> out = readStep(newStep);
-                tempList.add(out);
+        ArrayList<Object> temp = new ArrayList<>();
+        if(Steps.size() > 0 ){
+            for( int i=0; i< Steps.size(); i++) {
+                JSONObject newStep = (JSONObject) Steps.get(i);
+                ArrayList<Object> out = read_step(newStep);
+                temp.add(out);
             }
         }
-        return tempList;
-    }
 
-    private static ArrayList<Object> readStep(JSONObject step) {
+        return temp;
+
+        }
+    private static ArrayList<Object> read_step(JSONObject step){
+        String content = (String) step.get("content");
         ArrayList<Object> out = new ArrayList<>();
-        out.add((String) step.get("content"));
+        out.add(content);
         JSONArray subStep = (JSONArray) step.get("subSteps");
-        if (subStep.size() < 1) {
+        if(subStep.size() < 1){
             return out;
-        } else {
-            for (int i = 0; i < subStep.size(); i++) {
+        }else{
+            for( int i=0; i< subStep.size(); i++) {
                 JSONObject newStep = (JSONObject) subStep.get(i);
                 ArrayList<Object> out2 = new ArrayList<>();
-                out2 = readStep(newStep);
+                out2 = read_step(newStep);
                 out.add(out2);
 
             }
-            return out;
+        return out;
         }
+
+
     }
-    private static Boolean isEnd(String line, int y){
-        return (y==line.length()-1) ? false : true;
+
+    private static Boolean czyend(String line, int y){
+        if (y == line.length()-1){return false;}
+        else{return true;}
     }
-    private static String getLine(String line){
-        String lin="";
-        int y=0;
+
+    private static String getline(String line){
+        String lin = "";
+        int y = 0;
         for(int i=0; i< line.length();i++) {
             if (line.charAt(i) == '[') {
                 for(y=i+1; y<line.length();y++) {
                     if (line.charAt(y) == ']') {
-                        if (isEnd(line, y)){
+                        if (czyend(line, y)){
                             for(int x=y+1; x<line.length(); x++){
                                 lin = lin + "\n" + "<end>";
                             }
@@ -102,34 +121,44 @@ public class ReadJSON {
                         else{break;}
                     }
                     lin = lin + line.charAt(y);
-                }
+                    }
                 if (y == line.length())
-                    lin = lin + "\n" + "<start>";
+                lin = lin + "\n" + "<start>";
+                }
             }
-        }
+
         return lin;
     }
-    private static PrintWriter info_txt() throws FileNotFoundException{
-        File file=new File("files=ReadJson.txt");
-        PrintWriter out=new PrintWriter(file);
+
+    private static PrintWriter into_txt() throws FileNotFoundException {
+        File file = new File("files/ReadJson.txt");
+
+        PrintWriter out = new PrintWriter(file);
+
         out.println(title_2);
         out.println(actors_2);
-        out.println(systemActor+"\n");
-        for(Object objMySubScenario:mySubScenario){
-            String l=objMySubScenario.toString();
-            String[] line=l.split(",");
-            for (Object objLine: line){
-                String l2=objLine.toString();
-                out.println(getLine(l2));
+        out.println(systemActor + "\n");
+
+        for (Object o : mySubScenario) {
+            String l = o.toString();
+            String[] line = l.split(",");
+            for (Object s : line){
+                String l2 = s.toString();
+                //System.out.println(l2);
+                out.println(getline(l2));
             }
-        }
+            }
+
         out.close();
         return out;
     }
-    public String returnTitle() {
+
+
+    public String return_title(){
         return title_2;
     }
-    public ArrayList<String> getActors(){return actors_2;}
-}
+    public ArrayList<String> return_actors(){
+        return actors_2;
+    }
 
-
+    }

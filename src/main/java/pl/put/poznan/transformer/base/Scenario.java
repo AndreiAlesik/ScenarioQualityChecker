@@ -35,8 +35,8 @@ public class Scenario {
 
         json_scenario.main(file);
 
-        this.title = json_scenario.returnTitle();
-        this.actors = json_scenario.getActors();
+        this.title = json_scenario.return_title();
+        this.actors = json_scenario.return_actors();
         this.systemActor = json_scenario.systemActor;
 
         list = ReadFile.read("ReadJson.txt");
@@ -60,7 +60,7 @@ public class Scenario {
         tmp.mySubScenario.addContent(startInt, list, 0);
         tmp.mySubScenario.accept(new ShowVisitorScenario());
         this.mySubScenario=tmp.mySubScenario;
-        this.Save2JSON(tmp,"./json/Scenarioshow.json");
+        this.Save2JSON(tmp,"./output/Scenarioshow.json");
     }
 
     public void Scenarionumershow() throws FileNotFoundException {
@@ -73,7 +73,7 @@ public class Scenario {
         tmp.mySubScenario.accept(new ShowVisitorScenario());
 
         tmp.Savetofile(pw);
-        this.Save2JSON(tmp,"./json/Scenarionumershow.json");
+        this.Save2JSON(tmp,"./output/Scenarionumershow.json");
         pw.close();
     }
 
@@ -83,7 +83,7 @@ public class Scenario {
         tmp.startInt.reset();
         tmp.mySubScenario.lvlshow(startInt, list, 0,stop);
         tmp.mySubScenario.accept(new ShowVisitorScenario());
-        this.Save2JSON(tmp,"./json/Scenariolvlshow.json");
+        this.Save2JSON(tmp,"./output/Scenariolvlshow.json");
     }
 
     public int Stepscount() {
@@ -97,7 +97,7 @@ public class Scenario {
 
 //        this.mySubScenario.step_counter(this.mySubScenario);
 //        int value = this.mySubScenario.get_steps_count();
-        this.mySubScenario.Save2JSONint(value,"./json/steps_count.json");
+        this.mySubScenario.Save2JSONint(value,"./output/steps_count.json");
         return value;
     }
 
@@ -112,7 +112,7 @@ public class Scenario {
         KeyWordVisitor v = new KeyWordVisitor();
         this.mySubScenario.accept(v);
         int value = v.getKeyWords();
-        this.mySubScenario.Save2JSONint(value,"./json/Keywords.json");
+        this.mySubScenario.Save2JSONint(value,"./output/Keywords.json");
     }
 
     public void Stepscheck(){
@@ -127,7 +127,7 @@ public class Scenario {
         this.mySubScenario.accept(v);
 
         ArrayList<Step> steps = v.getInvalidSteps();
-        this.mySubScenario.Save2JSON(steps,"./json/Stepscheck.json");
+        this.mySubScenario.Save2JSON(steps,"./output/Stepscheck.json");
     }
 
     public  void Save2JSON(Scenario s,String fileJson){

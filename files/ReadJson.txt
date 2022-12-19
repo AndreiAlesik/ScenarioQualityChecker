@@ -1,0 +1,21 @@
+Dodanie książki
+[Bibliotekarz]
+System
+
+Bibliotekarz wybiera opcje dodania nowej pozycji książkowej.
+Wyświetla się formularz.
+Bibliotekarz podaje dane książki.
+IF: Bibliotekarz pragnie dodać egzemplarze książki.
+<start>
+Bibliotekarz wybiera opcję definiowania egzemplarzy.
+System prezentuje zdefiniowane egzemplarze.
+FOR EACH egzemplarz:
+<start>
+Bibliotekarz wybiera opcję dodania egzemplarza.
+System prosi o podanie danych egzemplarza.
+Bibliotekarz podaje dane egzemplarza i zatwierdza.
+System informuje o poprawnym dodaniu egzemplarza i prezentuje zaktualizowaną listę egzemplarzy.
+<end>
+<end>
+Bibliotekarz zatwierdza dodanie książki.
+System informuje o poprawnym dodaniu książki.
