@@ -132,7 +132,7 @@ public class Scenario {
 
     public  void Save2JSON(Scenario s,String fileJson){
         FileWriter file = null;
-        //private static FileWriter file;
+
         try {
             // Constructs a FileWriter given a file name, using the platform's default charset
             file = new FileWriter("./files/"+fileJson);

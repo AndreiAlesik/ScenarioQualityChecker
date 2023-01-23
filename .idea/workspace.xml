@@ -5,30 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af652fbf-dc5a-41d5-9236-ecef3f5abd98" name="Changes" comment="Visitor pattern">
-      <change afterPath="$PROJECT_DIR$/files/ReadJson.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/input/file3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/input/file4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/input/file5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/put/poznan/transformer/logic/VisitorPattern/CountVisitorsStepsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/TextTransformerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/TextTransformerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/VisitorPattern/CheckVisitorsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/VisitorPattern/CheckVisitorsSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/filereading/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/filereading/ReadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/filereading/ReadJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/filereading/ReadJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/ScenarioshowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/ScenarioshowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/VisitorPattern/CountVisitorsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/VisitorPattern/CountVisitorsSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/VisitorPattern/KeyWordVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/VisitorPattern/KeyWordVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/VisitorPattern/ShowVisitorScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/VisitorPattern/ShowVisitorScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/VisitorPattern/Visitable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/VisitorPattern/Visitable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/app/TextTransformerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/app/TextTransformerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/base/Scenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/base/Scenario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/logic/VisitorPattern/CheckVisitorsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/logic/VisitorPattern/CheckVisitorsSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/logic/filereading/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/logic/filereading/ReadFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/logic/filereading/ReadJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/logic/filereading/ReadJSON.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/KeywordsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/KeywordsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/Scenariolvlshow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/Scenariolvlshow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/Scenarionumershow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/Scenarionumershow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/ScenarioshowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/ScenarioshowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/StepsCountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/StepsCountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/StepscheckController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/rest/StepscheckController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/logic/VisitorPattern/CountVisitorsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/put/poznan/transformer/logic/VisitorPattern/CountVisitorsSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +28,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -64,37 +53,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/olesi/Hillel/ScenarioQualityChecker/files",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "42c2ee494644253e42e3895cda77782d",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/olesi/Hillel/ScenarioQualityChecker/files&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;42c2ee494644253e42e3895cda77782d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\olesi\Hillel\ScenarioQualityChecker\files" />
       <recent name="C:\Users\olesi\Hillel\ScenarioQualityChecker\files\input" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.put.poznan.transformer.logic.VisitorPattern" />
+      <recent name="pl.put.poznan.transformer.base" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CountVisitorsStepsTest.getStepCount">
+    <configuration name="CountVisitorsStepsTest.getStepCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ioprojectarchitecture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.put.poznan.transformer.logic.VisitorPattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.put.poznan.transformer.logic.VisitorPattern" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.logic.VisitorPattern.CountVisitorsStepsTest" />
+      <option name="METHOD_NAME" value="getStepCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TextTransformerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ioprojectarchitecture" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.put.poznan.transformer.app.TextTransformerApplication" />
@@ -102,6 +116,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CountVisitorsStepsTest.getStepCount" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
@@ -131,7 +150,17 @@
       <workItem from="1671125390995" duration="3855000" />
       <workItem from="1671397381801" duration="3611000" />
       <workItem from="1671440307447" duration="8029000" />
-      <workItem from="1671478785951" duration="6387000" />
+      <workItem from="1671478785951" duration="7064000" />
+      <workItem from="1671530667659" duration="3429000" />
+      <workItem from="1671542878061" duration="1366000" />
+      <workItem from="1671729361690" duration="2996000" />
+      <workItem from="1671876056170" duration="1329000" />
+      <workItem from="1673007854627" duration="33000" />
+      <workItem from="1673008165392" duration="609000" />
+      <workItem from="1673178559199" duration="17000" />
+      <workItem from="1674413183466" duration="674000" />
+      <workItem from="1674463836377" duration="167000" />
+      <workItem from="1674515337512" duration="1573000" />
     </task>
     <task id="LOCAL-00001" summary="JavaDoc">
       <created>1669800085638</created>
@@ -399,7 +428,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671485232162</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Visitor pattern">
+      <created>1671488249408</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1671488249408</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Visitor pattern">
+      <created>1671530842838</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1671530842838</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,6 +491,70 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>18</line>
+          <properties class="pl.put.poznan.transformer.rest.Scenarionumershow" method="get">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

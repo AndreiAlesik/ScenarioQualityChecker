@@ -17,31 +17,31 @@ public class TextTransformerApplication {
         SpringApplication.run(TextTransformerApplication.class, args);
         String file="file4.json";
         //Obiekty scenariusze
-        Scenario x = new Scenario(file);
+        Scenario scenario = new Scenario(file);
 
         ////Wyświetlenie scenariusza
         System.out.println("\n"+"Wyświetlenie scenariusza");
-        x.Scenarioshow();
+        scenario.Scenarioshow();
 
         ////Wyświetlenie scenariusza do określonego poziomu zagłębienia (poziom główny to 1)
         System.out.println("\n"+"Scenariusz do poziomu zagłebienia");
-        x.Scenariolvlshow(1);
+        scenario.Scenariolvlshow(1);
 
         ////Wyświetlenie scenariusza z numeracją korków
         System.out.println("\n"+"Scenariusz z numeracją kroków");
-        x.Scenarionumershow();
+        scenario.Scenarionumershow();
 
         ////Wyświetlenie liczby kroków scenariusza
         System.out.println("\n" + "Liczba kroków");
-        x.Stepscount();
+        scenario.Stepscount();
 
         ////Wyświetlanie liczby słów kluczowych
         System.out.println("\n" + "Słowa kluczowe");
-        x.Keywords();
+        scenario.Keywords();
 
         ////Wyświetlanie niepoprawnych kroków scenariusza
         System.out.println("\n" + "Niepoprawne kroki");
-        x.Stepscheck();
+        scenario.Stepscheck();
 
     }
 }
